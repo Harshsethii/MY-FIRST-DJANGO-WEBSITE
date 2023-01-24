@@ -3,7 +3,7 @@
     "builds": [
     {
     "src": "devntechno/wsgi.py",
-    "use": "@vercel/python",
+    "use": "hello/python",
     "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
     },
     {
@@ -21,7 +21,7 @@
     },
     {
     "src": "/(.*)",
-    "dest": "devntechno/wsgi.py"
+    "dest": "hello/wsgi.py"
     }
     ]
     }
